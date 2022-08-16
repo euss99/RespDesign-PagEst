@@ -172,19 +172,28 @@ main {
     text-align: start;
     color: var(--secondary-blue);
 }
+.tables-container {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .currency-table--container {
     width: 90%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 0 auto;
+    margin-left: 15px;
+    scroll-snap-align: center;
 }
 .comission-table--container {
     width: 90%;
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 30px;
+    scroll-snap-align: center;
 }
 .currency-table--container table, .comission-table--container table {
     width: 100%;
